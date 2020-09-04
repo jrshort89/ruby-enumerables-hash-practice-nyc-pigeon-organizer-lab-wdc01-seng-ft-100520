@@ -9,7 +9,7 @@ def nyc_pigeon_organizer(data)
       elsif !ans[x][key.to_s]
         ans[x][key.to_s] = [key2.to_s]
       end
-        if ans[x][key.to_s]
+        if !ans[x][key.to_s].include? key2.to_s 
         ans[x][key.to_s] << key2.to_s
       end
     }
